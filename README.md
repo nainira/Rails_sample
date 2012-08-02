@@ -19,7 +19,7 @@ this time, I decided to use postgresql instead of sqlite.
  Chap 3 clear! including Advanced setup
  Chap 4 Add full_title helper, Ruby Basic
  Chap 5 clear including excercises
- Chap 6 clear
+ Chap 6 clear including excercises
 
      | ************--------------- |			
 
