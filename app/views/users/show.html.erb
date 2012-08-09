@@ -1,3 +1,2 @@
-<% if @user %>
-<%= @user.name %>, <%= @user.email %>
-<% end %>
+<% provide(:title, @user.name) %>
+<h1><%= @user.name %></h1>
