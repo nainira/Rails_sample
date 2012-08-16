@@ -20,13 +20,29 @@ this time, I decided to use postgresql instead of sqlite.
  Chap 4 Add full_title helper, Ruby Basic
  Chap 5 clear including excercises
  Chap 6 clear including excercises
+ Chap 7 clear
 
-     | ************--------------- |			
+     | ***************------------ |			
 
-The Progress is in Chap 7 
+The Progress is in Chap 8 
 
-User in DB changed for 'gravatar' in 7.1.4.
+---- User in DB ----
+db-type: postgreSQL
+
+> changed for 'gravatar' in 7.1.4.
+
 name: "Example User",
 email: "example@railstutorial.org",
 password: "foobar",
 password_confirmation: "foobar"
+
+> reset for sign up page in 7.2
+
+no user.
+
+> sign up a user in 7.4.3 The first signup
+name: Rails Tutorial
+email: example@railstutorial.org
+password: foobar
+confirmation: foobar
+
