@@ -24,3 +24,9 @@ this time, I decided to use postgresql instead of sqlite.
      | ************--------------- |			
 
 The Progress is in Chap 7 
+
+User in DB changed for 'gravatar' in 7.1.4.
+name: "Example User",
+email: "example@railstutorial.org",
+password: "foobar",
+password_confirmation: "foobar"
