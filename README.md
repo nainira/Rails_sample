@@ -1,3 +1,4 @@
+
 # Ruby on Rails Tutorial: sample application
 
 This is the sample application for
@@ -21,8 +22,9 @@ this time, I decided to use postgresql instead of sqlite.
  Chap 5 clear including excercises
  Chap 6 clear including excercises
  Chap 7 clear
+ Cahp 8 clear but skipped the optional part 8.3(Cucumber)
 
-     | ***************------------ |			
+     | ******************--------- |			
 
 The Progress is in Chap 8 
 
