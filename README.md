@@ -26,7 +26,7 @@ this time, I decided to use postgresql instead of sqlite.
 
      | ******************--------- |			
 
-The Progress is in Chap 8 
+The Progress is in Chap 9 
 
 ---- User in DB ----
 db-type: postgreSQL
