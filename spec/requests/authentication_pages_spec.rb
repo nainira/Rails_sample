@@ -4,6 +4,13 @@ describe "AuthenticationPages" do
   
   subject { page }
 
+  # Chap9.ex3
+  describe "root page" do
+    before { visit root_url }
+    it { should have_selector('nav ul.nav li:last', text: 'Sign in') }
+    it { should_not have_selector('li#fat-menu>a', text: 'Account') }
+  end
+
   describe "signin page" do
   	before { visit signin_path }
   	it { should have_selector('h1',		text: 'Sign in' ) }
