@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 	def new
 		if signed_in?
-			flash[:success] = "you are already signed in"
+			flash[:success] = "you are already signed in!"
 			redirect_to root_path
 		else
 			render 'new'

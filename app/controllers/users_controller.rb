@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       if @user.save
       	# Handle a successful save.
           sign_in @user
-        	flash[:success] = "Welcome to the Sample App!"
+        	flash[:success] = "Welcome to the Sample App!" 
         	redirect_to @user
       else
         render 'new'
@@ -54,9 +54,14 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User destroyed."
-    redirect_to users_url
+    if !User.find(params[:id]).admin?
+      User.find(params[:id]).destroy
+      flash[:success] = "User destroyed."
+      redirect_to users_url
+    else
+      flash[:success] = "Admin cannot be destroyed"
+      redirect_to users_url
+    end
   end
 
   private
