@@ -35,6 +35,7 @@ group :test do
   gem 'rb-fsevent', :require => false
   gem 'growl', '1.0.3'
   gem 'sqlite3', '1.3.5'
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
