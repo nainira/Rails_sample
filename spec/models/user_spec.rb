@@ -33,12 +33,13 @@ describe User do
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
   it { should respond_to(:microposts) }
+  it { should respond_to(:feed) }
 
   it { should be_valid }
   it { should_not be_admin }
 
   # chap9.ex1
-  describe "accessob;e attrobites" do
+  describe "accessible attributes" do
 
     it "should not allow access to admin" do
       expect do
@@ -178,6 +179,16 @@ describe User do
       microposts.each do |microposts|
         Micropost.find_by_id(microposts.id).should be_nil
       end
+    end
+
+    describe "status" do
+      let!(:unfollowed_post) do
+        FactoryGirl.create(:micropost, user: FactoryGirl.create(:user))
+      end
+
+      its(:feed) { should include(newer_micropost) }
+      its(:feed) { should include(older_micropost) }
+      its(:feed) { should_not include(unfollowed_post) }
     end
   end
 end

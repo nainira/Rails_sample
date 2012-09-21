@@ -29,9 +29,15 @@ class User < ActiveRecord::Base
 	# User.create(name: "Michael Hartl", email: "mhartl@example.com",
  	#             password: "foobar", password_confirmation: "foobar")
 
+  def feed
+     # this is preliminary. See "Following users" for the full implementation
+     Micropost.where("user_id = ?", id)
+  end
   private
 
     def create_remember_token
       self.remember_token = SecureRandom.urlsafe_base64      
     end
+    
+    
 end

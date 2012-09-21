@@ -13,3 +13,8 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore sublime project files
+
+railstutorial_app.sublime-workspace
+railstutorial_app.sublime-project
