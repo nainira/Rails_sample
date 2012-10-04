@@ -33,7 +33,7 @@ this time, I decided to use postgresql instead of sqlite.
  		I didn't have any error finishing it this time, it seems that the excercises of chap 8 was the issue.
 
  Chap 9 clear!
- Chap 10 clear!
+ Chap 10 clear! skipped the excercises for now.
 
 The Progress is in Chap 10 exercises
 

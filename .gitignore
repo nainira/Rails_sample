@@ -14,7 +14,14 @@
 /log/*.log
 /tmp
 
-# Ignore sublime project files
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
 
+# Ignore sublime project files
 railstutorial_app.sublime-workspace
 railstutorial_app.sublime-project
