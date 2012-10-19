@@ -34,12 +34,14 @@ this time, I decided to use postgresql instead of sqlite.
 
  Chap 9 clear!
  Chap 10 clear! skipped the excercises for now.
+ Chap 11 clear! finally finished !!!! no excercises yet..
 
 The Progress is in Chap 10 exercises
 
-     | ************************--- |			
+     | *************************** |	+ more things to learn		
 
-
+at the last part of the tutorial pages, it suggested extensions.
+I'll do those someday.
 
 
 ---- User in DB ----
@@ -76,4 +78,5 @@ check the file for details 'lib/tasks/sample_data.rake'
 
 > turned the test db into sqlite
 something I should've done earlier.
+
 I set all as psotgresql but all the data stored in db was reset everytime I run rspec. I should've read the configuration file carefully.
